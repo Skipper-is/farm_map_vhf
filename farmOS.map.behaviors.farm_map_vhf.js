@@ -1,11 +1,11 @@
 (function () {
-  farmOS.map.behaviors.farm_map_no = {
+  farmOS.map.behaviors.farm_map_vhf = {
     attach: function (instance) {
 
-      // Add Norkart Flyfoto layer.
+      // Add Sept 2019 layer
       var opts = {
-        title: 'Norkart Flyfoto',
-        url: 'http://map04.eniro.no/geowebcache/service/tms1.0.0/aerial/{z}/{x}/{-y}.jpeg?c=2542211020&v=20160420',
+        title: 'Sept 2019',
+        url: 'https://home.skipper-iwb.co.uk/webmapserver/tileserver.php/DroneSept19/{z}/{x}/{y}.jpg',
         group: 'Base layers',
       };
       instance.addLayer('xyz', opts);
