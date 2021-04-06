@@ -2,6 +2,16 @@
   farmOS.map.behaviors.farm_map_vhf = {
     attach: function (instance) {
 
+      //Historic
+      var historic = {
+        title: 'Historic: 1945',
+        url: 'https://home.skipper-iwb.co.uk/webmapserver/tileserver.php/1945/{z}/{x}/{y}.jpg',
+        group: 'Base layers',
+		visible: false,
+		base: false,
+      };
+
+      instance.addLayer('xyz', historic);
       // Add Sept 2019 layer
       var opts = {
         title: 'Sept 2019',
@@ -107,11 +117,21 @@ var feb2021 = {
   title: '22nd Feb 2021',
   url: 'https://home.skipper-iwb.co.uk/webmapserver/tileserver.php/feb2021/{z}/{x}/{y}.png',
   group: 'Base layers',
-  visible: true,
+  visible: false,
   base: false,
 
 };
 instance.addLayer('xyz',feb2021);
+
+var apr2021 = {
+  title: '2nd April 2021',
+  url: 'https://home.skipper-iwb.co.uk/webmapserver/tileserver.php/April2021/{z}/{x}/{y}.png',
+  group: 'Base layers',
+  visible: true,
+  base: false,
+
+};
+instance.addLayer('xyz',apr2021);
 
 
     },
